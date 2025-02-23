@@ -1,0 +1,73 @@
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    background-color: #e9ebd9;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.logo img {
+    width: 250px;
+    align-items:center ;
+}
+.header1 {
+    display: flex;
+    justify-content:space-between;
+
+    background-color: #ffffff;
+    padding: 3px;
+}
+.shop ul {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.shop ul li a {
+    color: rgb(16, 1, 1);
+    text-decoration: none;
+}  
+
+.register {
+    display: flex;
+    justify-content: rigth;
+    background-color: #ffffff;
+    padding: 3px;
+}
+.register ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.register ul li a {
+    color: rgb(16, 1, 1);
+    text-decoration: none;
+} 
+.buscador {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-grow: 1;
+    margin: 0 20px;
+    height: 100%; /* Ajusta según sea necesario */
+}
+
+.buscador input {
+    background-color: rgb(198, 218, 254);
+    width: 50%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    text-align: center; /* Para centrar el texto dentro del input */
+}

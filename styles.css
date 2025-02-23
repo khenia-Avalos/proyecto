@@ -1,0 +1,165 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: black;
+}
+
+/* Estilos del encabezado */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #000000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.icon-buttons {
+    display: flex;
+    gap: 90px;
+    margin-left: 10px;
+}
+
+.icon-buttons i {
+    background-color: #373835;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+}
+
+.red-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.red-buttons button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.blue-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.blue-buttons button {
+    background-color: rgb(85, 0, 255);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.secondary-nav {
+    display: flex;
+    justify-content: left;
+    background-color: #333;
+    padding: 10px;
+}
+
+.secondary-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.secondary-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos del acordeón */
+.main-accordion-container {
+    background-color: #5e0404;
+    width: 100%;
+}
+
+/* Estilo para cada ítem del acordeón */
+.acordion-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border-top: 2px solid rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+.acordion-item:hover {
+    transform: scale(1.05);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+/* Estilo para los títulos del acordeón */
+.acordion-title {
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 3px;
+    width: 100%;
+    text-align: center;
+    color: white; /* Texto en blanco */
+}
+
+/* Estilo para la descripción (oculta por defecto) */
+.acordion-desc {
+    display: none; /* Asegúrate de que esté oculta por defecto */
+    width: 100%;
+    background-color: #700e0e;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4px;
+    color: rgba(255, 255, 255, 0.616); /* Texto en blanco */
+}
+
+/* Clase visible para mostrar la descripción */
+.acordion-desc.visible {
+    display: flex; /* Cuando la clase .visible se agrega, se muestra */
+}
+
+/* Efecto cuando el acordeón está activo (opcional) */
+.acordion-title:hover {
+    background-color: #2d0606;
+}
