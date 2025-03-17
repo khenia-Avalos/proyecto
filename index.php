@@ -4,5 +4,12 @@
 
     <div class="main-accordion-container"></div>
     <script src="./script/acordion.js"></script>
+    <!-- Incluir JS de Bootstrap -->
+
+
+
+
+  
+
 </body>
 </html>

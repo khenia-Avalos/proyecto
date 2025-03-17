@@ -1,73 +1,586 @@
+* {
+    box-sizing: border-box;
+}
+.nav{
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Esto pone el logo a la izquierda y el botón a la derecha */
+    align-items: center;
+    background-color: #000000;
+    padding: 0%; /* Ajustamos el padding */
+    margin: 0; /* Eliminamos cualquier margen */
+    position: fixed;
+    top: 0;
+    width: 100vw; /* Usamos 100vw para asegurar que el header ocupe todo el ancho del viewport */
+    left: 0; /* Aseguramos que empiece desde el borde izquierdo */
+/* Para asegurarnos de que esté encima de otros elementos */
+height: 85px;
+}
+.navbarNavDropdown{
+    display: flex;
+    justify-content: space-between; /* Esto pone el logo a la izquierda y el botón a la derecha */
+    align-items: center;
+    background-color: #000000;
+    padding: 0%; /* Ajustamos el padding */
+    margin: 0; /* Eliminamos cualquier margen */
+    position: fixed;
+    top: 0;
+    width: 100vw; /* Usamos 100vw para asegurar que el header ocupe todo el ancho del viewport */
+    left: 0; /* Aseguramos que empiece desde el borde izquierdo */
+/* Para asegurarnos de que esté encima de otros elementos */
+
+}
+/* Estilo general del header */
 .main-header {
     display: flex;
+    justify-content: space-between; /* Esto pone el logo a la izquierda y el botón a la derecha */
     align-items: center;
-    justify-content: center;
-    padding: 15px 20px;
-    background-color: #e9ebd9;
+    background-color: #000000;
+    padding: 0%; /* Ajustamos el padding */
+    margin: 0; /* Eliminamos cualquier margen */
+    position: fixed;
+    top: 0;
+    width: 100vw; /* Usamos 100vw para asegurar que el header ocupe todo el ancho del viewport */
+    left: 0; /* Aseguramos que empiece desde el borde izquierdo */
+/* Para asegurarnos de que esté encima de otros elementos */
 }
 
+/* Estilo del logo */
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-
 }
 
-.logo img {
-    width: 250px;
-    align-items:center ;
+.navbar-brand {
+padding-top: 0%;
 }
-.header1 {
-    display: flex;
-    justify-content:space-between;
-
-    background-color: #ffffff;
-    padding: 3px;
-}
-.shop ul {
-    justify-content: center;
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-.shop ul li a {
-    color: rgb(16, 1, 1);
-    text-decoration: none;
-}  
-
-.register {
-    display: flex;
-    justify-content: rigth;
-    background-color: #ffffff;
-    padding: 3px;
-}
-.register ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-.register ul li a {
-    color: rgb(16, 1, 1);
-    text-decoration: none;
-} 
-.buscador {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    flex-grow: 1;
-    margin: 0 20px;
-    height: 100%; /* Ajusta según sea necesario */
+.navbar-brand img {
+    width: 170px;
 }
 
-.buscador input {
-    background-color: rgb(198, 218, 254);
-    width: 50%;
-    padding: 8px;
-    border-radius: 20px;
+/* Estilo del dropdown */
+.dropdown3 {
+    padding-right: 200px;
+    position: relative;
+    display: inline-block;
+  font-display: flex;
+    align-items: center;
+   width: 75px;
+   height: 85px;
+   align-content: center;
+}
+
+.dropdown-button3 {
+    display: flex;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
     border: none;
-    text-align: center; /* Para centrar el texto dentro del input */
+    cursor: pointer;
+   align-content: center;
+    width: 70px;
+   height: 85px;
+    align-items: center;
+}
+
+.dropdown-button3 img {
+    width: 20px; /* Tamaño de la imagen en el botón */
+    margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo del menú desplegable */
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: auto; /* Esto se ajustará automáticamente al tamaño del texto */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content3 a {
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content3 a img {
+    width: 20px; /* Tamaño de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/* Cambiar color al pasar el ratón */
+.dropdown-content3 a:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar el menú cuando se pasa el ratón por encima del botón */
+.dropdown3:hover .dropdown-content3 {
+    display: block;
+}
+
+/* Cambiar color del botón al pasar el ratón por encima */
+.dropdown3:hover .dropdown-button3 {
+    background-color: #3b3d3b;
+
+
+
+
+}
+/* Estilo del dropdown de ciuenta */
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+    font-display: flex;
+    align-items: center;
+    width: 60px;
+    height: 85px;
+    align-content: center;
+    padding-right: 10px;
+}
+
+.dropdown-button1 {
+    background-color: #000000;
+    padding: 0; /* Quitamos el padding para que el tamaño del botón sea controlado por width y height */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    width: 60px;
+    height: 85px;
+
+}
+
+.dropdown-button1 img {
+    width: 29px;
+}
+
+/* Estilo del menú desplegable */
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 204px; /* Esto se ajustará automáticamente al tamaño del texto */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 16px;
+    font-family: Georgia;
+    text-align: left;
+}
+
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content1 a img {
+    width: 35px; /* Tamaño de la imagen */
+    margin-right: 0px; /* Espacio entre la imagen y el texto */
+}
+
+/* Cambiar color al pasar el ratón */
+.dropdown-content1 a:hover {
+    background-color: #ddd;
+
+}
+
+/* Mostrar el menú cuando se pasa el ratón por encima del botón */
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+/* Cambiar color del botón al pasar el ratón por encima */
+.dropdown1:hover .dropdown-button1 {
+    background-color: #3b3d3b;
+}
+.crear-cuenta {
+    background-color: blue;
+ width: 200px;
+   
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+.crear-cuenta:hover{
+    background-color: darkblue;
+}
+.favorito {
+   
+    position: relative;
+    display: inline-block;
+    font-display: flex;
+    align-items: center;
+    width: 60px;
+    height: 85px;
+    align-content: center;
+    padding-right: 10px;
+}
+
+.favorito-button {
+    background-color: #000000;
+ /* Quitamos el padding para que el tamaño del botón sea controlado por width y height */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    width: 60px;
+    height: 85px;
+}
+
+.favorito img {
+    width: 28px;
+}
+
+.favorito-button:hover {
+    background-color: #3b3d3b;
+}
+
+
+
+
+
+
+.carrito {
+   
+    position: relative;
+    display: inline-block;
+    font-display: flex;
+    align-items: center;
+    width: 60px;
+    height: 85px;
+    align-content: center;
+    padding-right: 10px;
+}
+
+.carrito-button {
+    background-color: #000000;
+    padding: 0; /* Quitamos el padding para que el tamaño del botón sea controlado por width y height */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    width: 60px;
+    height: 85px;
+}
+
+.carrito img {
+    width: 27px;
+}
+
+.carrito-button:hover {
+    background-color: #3b3d3b;
+}
+
+
+
+
+
+
+.ayuda {
+   
+    position: relative;
+    display: inline-block;
+    font-display: flex;
+    align-items: center;
+    width: 60px;
+    height: 85px;
+    align-content: center;
+    padding-right: 10px;
+}
+
+.ayuda-button {
+    background-color: #000000;
+    padding: 0; /* Quitamos el padding para que el tamaño del botón sea controlado por width y height */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    width: 60px;
+    height: 85px;
+}
+
+.ayuda img {
+    width: 28px;
+}
+
+.ayuda-button:hover {
+    background-color: #3b3d3b;
+}
+
+
+
+
+
+/* Estilos generales */
+.lupa {
+    margin-left: auto;
+    position: relative;
+    display: inline-block;
+    font-display: flex;
+    align-items: center;
+    width: 60px;
+    height: 85px;
+    align-content: center;
+    padding-right: 10px;
+}
+
+.lupa-button {
+    background-color: #000000;
+    padding: 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 85px;
+}
+
+.lupa img {
+    width: 28px;
+}
+
+.lupa-button:hover {
+    background-color: #3b3d3b;
+}
+
+/* Capa de fondo gris */
+.overlay {
+    display: none; /* Inicialmente oculta */
+    position: fixed;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo gris transparente */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor de la barra de búsqueda */
+.search-container {
+    display: flex;
+    background-color: white;
+   
+    padding: 2px;
+    border-radius: 4px;
+    width: 450px;
+    justify-content: space-between;
+    align-items: center;
+    
+        position: absolute;
+        top: 0px;
+        right: 80px;
+    
+    
+}
+
+/* Barra de búsqueda */
+.search-input {
+    width: 450%;
+    padding: 20px;
+    border: 1px solid #454040;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/* Botón de cerrar */
+.search-close {
+    background-color: #000000;
+   height: 65px;
+    color: white;
+    padding: 13px 13px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-close:hover {
+    background-color: #3b3d3b;
+}
+.search-container img {
+    width: 30px;
+
+}
+
+
+  
+  
+ 
+
+/* Ajuste para evitar que el dropdown se limite al contenedor del navbar */
+.navbar, .navbar-nav, .dropdown {
+    position: static !important; /* Evita restricciones de posicionamiento */
+    z-index:100 ;
+}
+
+
+.navbar-custom {
+    background-color: #000000 !important; /* Negro puro */
+}
+
+/* Estilo básico del dropdown */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(60, 59, 59, 0.937);
+    height: auto;
+    display: none; /* Oculto por defecto */
+    z-index: 1000;
+}
+
+
+
+/* Botón de cerrar "X" */
+.close-dropdown {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.close-dropdown:hover {
+    color: rgb(0, 84, 255);
+
+}
+.contenedor-opciones {
+    display: flex;
+    z-index: 1000;
+    height: auto;
+    flex-wrap: wrap; /* Permite que los elementos bajen si no hay espacio */
+  
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    overflow-x: auto;
+}
+
+.opciones {
+    width: 300px; /* Ancho de cada bloque */
+    color: #ddd;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    gap: 10px;
+}
+
+.opciones a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.opciones a:hover {
+    color: #ffffff;
+}
+
+.contenedor-opciones1 {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap; /* Permite que los elementos bajen */
+   padding-top: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    overflow-x: auto;
+    margin-top: 10px; /* Ajustado a 50px de separación */
+}
+
+.opciones1 {
+    width: 300px; /* Ancho de cada bloque */
+    color: #ddd;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+    gap: 10px;
+}
+
+.opciones1 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.opciones1 a:hover {
+    color: #ffffff;
+}
+
+.opciones a:first-child,
+.opciones1 a:first-child {
+    font-weight: bold; /* Aplica negrita al primer enlace de cada contenedor */
+}
+
+
+
+
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    position: relative; /* Asegúrate de que el slider tenga un posicionamiento relativo */
+    z-index: 0; 
+
+}
+.slider ul{
+    display:flex;
+    padding-top:90px;
+    width:300%;
+    animation:cambio 10s infinite alternate;
+    animation-timing-function: ease-out;
+    z-index: -1; 
+
+}
+.slider li {
+    width: 100%;
+    list-style: none;
+    z-index: -1; 
+}
+
+.slider img{
+    width: 100%;
+    z-index: 0; 
+}
+
+@keyframes cambio {
+    0% { margin-left: 0%;}
+    20%{ margin-left: 0%;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+}
+
+
+#sli {
+    width: 100%;
 }
